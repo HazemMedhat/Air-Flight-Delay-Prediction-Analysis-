@@ -5,6 +5,7 @@ This project aims to predict flight delays using machine learning techniques. By
 
 ## Table of Contents
 - [Project Overview](#project-overview)
+- [Dataset](#dataset)
 - [Installation](#installation)
 - [Dependencies](#dependencies)
 - [Data Loading and Exploration](#data-loading-and-exploration)
@@ -13,6 +14,16 @@ This project aims to predict flight delays using machine learning techniques. By
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Dataset
+The dataset used in this project contains flight-related data, including departure and arrival delays, flight schedules, carrier details, and airport/airline hub classifications. The dataset is stored on Google Drive and can be accessed via the following link:
+
+- **Dataset Link**: [Google Drive Link](https://drive.google.com/file/d/1tHGf4Cm2sR8d5E0kYMocyUSOgiFrTxkf/view?usp=drive_link) 
+
+**Dataset Structure**:
+- Columns: `depdelay`, `arrdelay`, `scheduleddepartdatetime`, `origin`, `dest`, `uniquecarrier`, `marketshareorigin`, `marketsharedest`, `hhiorigin`, `hhidest`, etc.
+- Format: CSV or similar tabular format.
+- Size: [Specify size if known, e.g., ~X MB or ~Y rows].
 
 ## Installation
 To run this project, ensure you have Python installed. Clone the repository and install the required dependencies using the following commands:
@@ -72,7 +83,7 @@ The neural network model shows high precision and recall but relatively low accu
 
 ## Usage
 To run the notebook:
-1. Mount your Google Drive in the notebook to access the dataset.
+1. Mount your Google Drive in the notebook to access the dataset (ensure the dataset file is available in the specified path).
 2. Execute the cells sequentially to install dependencies, load data, preprocess, train models, and evaluate results.
 3. Use the generated profile report and accuracy plots to analyze the data and model performance.
 
@@ -83,6 +94,3 @@ jupyter notebook Air_Flight_Delay.ipynb
 
 ## Contributing
 Contributions are welcome! Please fork the repository, create a new branch, and submit a pull request with your changes. Ensure your code follows the project's structure and includes appropriate documentation.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
